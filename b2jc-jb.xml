@@ -19,8 +19,8 @@
   <project name="b2jc_gaia-locales" path="gaia-locales" remote="b2jc" revision="master"/>
   <project name="b2jc_gecko-locales" path="gecko-locales" remote="b2jc" revision="master"/>
   <project name="b2jc_jcrom_common" path="jcrom/common" remote="b2jc" revision="master"/>
-  <project name="b2jc_device-mako" path="device/lge/mako" remote="b2g" revision="b2jc-4.3_r2.1"/>
-  <project name="b2jc_device-flo" path="device/asus/flo" remote="b2g" revision="b2jc-4.3_r2.1"/>
+  <project name="b2jc_device-mako" path="device/lge/mako" remote="b2jc" revision="b2jc-4.3_r2.1"/>
+  <project name="b2jc_device-flo" path="device/asus/flo" remote="b2jc" revision="b2jc-4.3_r2.1"/>
 
   <!-- B2G specific things. -->
   <project name="gecko.git" path="gecko" remote="mozillaorg" revision="master" />
