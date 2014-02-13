@@ -5,19 +5,25 @@
   <remote fetch="git://github.com/mozilla-b2g/" name="b2g"/>
   <remote fetch="git://github.com/mozilla/" name="mozilla"/>
   <remote fetch="git://github.com/apitrace/" name="apitrace"/>
+  <remote fetch="git://github.com/JCROM-FxOS/" name="b2jc"/>
   <remote fetch="git://codeaurora.org/" name="caf"/>
   <remote fetch="https://git.mozilla.org/releases" name="mozillaorg"/>
 
   <default remote="caf" revision="refs/tags/android-4.3_r2.1" sync-j="4"/>
 
-  <!-- B2G specific things. -->
-  <project name="platform_build" path="build" remote="b2g" revision="b2g-4.3_r2.1">
+  <!-- B2JC -->
+  <project name="b2jc_build" path="build" remote="b2jc" revision="b2jc-4.3_r2.1">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
+  <project name="b2jc_gaia" path="gaia" remote="b2jc" revision="b2jc-master"/>
+  <project name="b2jc_gaia-locales" path="gaia-locales" remote="b2jc" revision="master"/>
+  <project name="b2jc_gecko-locales" path="gecko-locales" remote="b2jc" revision="master"/>
+  <project name="b2jc_jcrom_common" path="jcrom/common" remote="b2jc" revision="master"/>
+
+  <!-- B2G specific things. -->
   <project name="gecko.git" path="gecko" remote="mozillaorg" revision="master" />
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="master"/>
-  <project name="gaia" path="gaia" remote="mozillaorg" revision="master"/>
   <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="master"/>
   <project name="apitrace" path="external/apitrace" remote="apitrace" revision="master" />
