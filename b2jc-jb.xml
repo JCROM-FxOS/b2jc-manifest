@@ -16,6 +16,7 @@
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="b2jc_gaia" path="gaia" remote="b2jc" revision="b2jc-master"/>
+  <project name="b2jc_gecko" path="gecko" remote="b2jc" revision="b2jc-master"/>
   <project name="b2jc_gaia-locales" path="gaia-locales" remote="b2jc" revision="master"/>
   <project name="b2jc_gecko-locales" path="gecko-locales" remote="b2jc" revision="master"/>
   <project name="b2jc_jcrom_common" path="jcrom/common" remote="b2jc" revision="master"/>
@@ -23,7 +24,6 @@
   <project name="b2jc_device-flo" path="device/asus/flo" remote="b2jc" revision="b2jc-4.3_r2.1"/>
 
   <!-- B2G specific things. -->
-  <project name="gecko.git" path="gecko" remote="mozillaorg" revision="master" />
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="master"/>
   <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
