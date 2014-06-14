@@ -15,8 +15,6 @@
   <project name="b2jc_build" path="build" remote="b2jc" revision="b2jc-4.4.2_r1">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project name="b2jc_gaia" path="gaia" remote="b2jc" revision="b2jc-master"/>
-  <project name="b2jc_gecko" path="gecko" remote="b2jc" revision="b2jc-master"/>
   <project name="b2jc_gaia-locales" path="gaia-locales" remote="b2jc" revision="master"/>
   <project name="b2jc_gecko-locales" path="gecko-locales" remote="b2jc" revision="master"/>
   <project name="b2jc_jcrom_common" path="jcrom/common" remote="b2jc" revision="master"/>
@@ -25,8 +23,11 @@
   <project name="b2jc_device-hammerhead" path="device/lge/hammerhead" remote="b2jc" revision="b2jc-4.4.2_r1"/>
 
   <!-- B2G specific things. -->
+  <project name="gaia" path="gaia" remote="mozillaorg" revision="master"/>
+  <project name="gecko" path="gecko" remote="mozillaorg" revision="master"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="master"/>
   <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
+  <project name="librecovery" path="librecovery" remote="b2g" revision="master"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="master"/>
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
   <project name="valgrind" path="external/valgrind" remote="b2g" revision="fxos"/>
@@ -39,11 +40,13 @@
   <project groups="darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers"/>
   <project groups="darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1"/>
   <project groups="darwin" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7" path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.7"/>
+  <project groups="darwin" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5"/>
   <project groups="linux" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6"/>
   <project groups="linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6"/>
   <project groups="linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7"/>
   <project groups="linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7"/>
   <project groups="linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.7" />
+  <project groups="linux,x86" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5"/>
   <project name="device/common" path="device/common"/>
   <project name="device/sample" path="device/sample"/>
   <project name="platform/abi/cpp" path="abi/cpp"/>
@@ -70,7 +73,6 @@
   <project name="platform/external/gtest" path="external/gtest"/>
   <project name="platform/external/harfbuzz" path="external/harfbuzz"/>
   <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng"/>
-  <project name="platform/external/icu4c" path="external/icu4c" remote="aosp"/>
   <project name="platform/external/iproute2" path="external/iproute2"/>
   <project name="platform/external/ipsec-tools" path="external/ipsec-tools"/>
   <project name="platform/external/iptables" path="external/iptables"/>
@@ -125,7 +127,7 @@
   <project name="platform/ndk" path="ndk"/>
   <project name="platform/prebuilts/misc" path="prebuilts/misc"/>
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
-  <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
+  <project name="platform_prebuilts_qemu-kernel" path="prebuilts/qemu-kernel" remote="b2g" revision="b2g-4.4.2_r1"/>
   <project name="platform/prebuilts/sdk" path="prebuilts/sdk"/>
   <project name="platform/prebuilts/tools" path="prebuilts/tools"/>
   <project name="platform/system/extras" path="system/extras"/>
@@ -134,6 +136,7 @@
   <project name="platform/system/security" path="system/security"/>
   <project name="platform/system/vold" path="system/vold"/>
 
+  <project name="platform/external/icu4c" path="external/icu4c" remote="aosp"/>
   <project name="platform_frameworks_av" path="frameworks/av" remote="b2g" revision="b2g-4.4.2_r1"/>
   <project name="platform_system_core" path="system/core" remote="b2g" revision="b2g-4.4.2_r1"/>
 
